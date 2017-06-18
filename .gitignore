@@ -1,0 +1,6 @@
+/*.buildinfo
+/*.changes
+/*.deb
+/*.dsc
+/*.tar.xz
+/python3.6-*
