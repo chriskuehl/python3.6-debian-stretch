@@ -10,6 +10,13 @@ If you just want to grab pre-built Debian packages, you can find them in the
 [Releases][releases] tab on GitHub. Download the ones you want, then run `sudo
 dpkg -i *.deb` to install them.
 
+For example, a typical installation could look like this:
+
+```bash
+$ wget https://github.com/chriskuehl/python3.6-debian-stretch/releases/download/v3.6.1-2-deb9u1/{python3.6_3.6.1-2.deb9u1_amd64,python3.6-minimal_3.6.1-2.deb9u1_amd64,python3.6-dev_3.6.1-2.deb9u1_amd64,libpython3.6_3.6.1-2.deb9u1_amd64,libpython3.6-minimal_3.6.1-2.deb9u1_amd64,libpython3.6-stdlib_3.6.1-2.deb9u1_amd64,libpython3.6-dev_3.6.1-2.deb9u1_amd64}.deb
+$ sudo dpkg -i *.deb
+```
+
 
 ## Building from source
 
