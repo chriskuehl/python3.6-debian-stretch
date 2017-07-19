@@ -1,7 +1,7 @@
 Python 3.6 Debian stretch backport
 ========
 
-Unofficial Python 3.6 backports for Debian stretch.
+Unofficial Python 3.6.2 backports for Debian stretch.
 
 
 ## Usage
@@ -13,7 +13,7 @@ dpkg -i *.deb` to install them.
 For example, a typical installation could look like this:
 
 ```bash
-$ wget https://github.com/chriskuehl/python3.6-debian-stretch/releases/download/v3.6.1-2-deb9u1/{python3.6_3.6.1-2.deb9u1_amd64,python3.6-minimal_3.6.1-2.deb9u1_amd64,python3.6-dev_3.6.1-2.deb9u1_amd64,libpython3.6_3.6.1-2.deb9u1_amd64,libpython3.6-minimal_3.6.1-2.deb9u1_amd64,libpython3.6-stdlib_3.6.1-2.deb9u1_amd64,libpython3.6-dev_3.6.1-2.deb9u1_amd64}.deb
+$ wget https://github.com/chriskuehl/python3.6-debian-stretch/releases/download/v3.6.2-1-deb9u1/{python3.6_3.6.2-1.deb9u1_amd64,python3.6-minimal_3.6.2-1.deb9u1_amd64,python3.6-dev_3.6.2-1.deb9u1_amd64,libpython3.6_3.6.2-1.deb9u1_amd64,libpython3.6-minimal_3.6.2-1.deb9u1_amd64,libpython3.6-stdlib_3.6.2-1.deb9u1_amd64,libpython3.6-dev_3.6.2-1.deb9u1_amd64}.deb
 $ sudo dpkg -i *.deb
 ```
 

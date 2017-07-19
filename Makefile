@@ -1,6 +1,6 @@
 SHELL := /bin/bash
 
-VERSION := 3.6.1-2
+VERSION := 3.6.2-1
 WORKDIR := python3.6-$(shell cut -d- -f1 <<< '$(VERSION)')
 
 .PHONY: builddeb
