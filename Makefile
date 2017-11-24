@@ -1,6 +1,6 @@
 SHELL := /bin/bash
 
-VERSION := 3.6.2-1
+VERSION := 3.6.3-1
 WORKDIR := python3.6-$(shell cut -d- -f1 <<< '$(VERSION)')
 
 .PHONY: builddeb
@@ -9,4 +9,4 @@ builddeb:
 	cd $(WORKDIR) \
 		&& DEBFULLNAME='Chris Kuehl' DEBEMAIL=ckuehl@ocf.berkeley.edu \
 			dch --local ~deb9u --distribution stretch-backports 'Backported for stretch.' \
-		&& dpkg-buildpackage -us -uc -sa
+		&& DEB_BUILD_OPTIONS=nocheck dpkg-buildpackage -us -uc -sa
