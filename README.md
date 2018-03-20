@@ -1,7 +1,7 @@
 Python 3.6 Debian stretch backport
 ========
 
-Unofficial Python 3.6.3 backports for Debian stretch.
+Unofficial Python 3.6.4 backports for Debian stretch.
 
 
 ## Usage
@@ -13,7 +13,7 @@ dpkg -i *.deb` to install them.
 For example, a typical installation could look like this:
 
 ```bash
-$ wget https://github.com/chriskuehl/python3.6-debian-stretch/releases/download/v3.6.3-1-deb9u1/{python3.6_3.6.3-1.deb9u1_amd64,python3.6-minimal_3.6.3-1.deb9u1_amd64,python3.6-dev_3.6.3-1.deb9u1_amd64,libpython3.6_3.6.3-1.deb9u1_amd64,libpython3.6-minimal_3.6.3-1.deb9u1_amd64,libpython3.6-stdlib_3.6.3-1.deb9u1_amd64,libpython3.6-dev_3.6.3-1.deb9u1_amd64}.deb
+$ wget https://github.com/chriskuehl/python3.6-debian-stretch/releases/download/v3.6.4-4-deb9u1/{python3.6_3.6.4-4.deb9u1_amd64,python3.6-minimal_3.6.4-4.deb9u1_amd64,python3.6-dev_3.6.4-4.deb9u1_amd64,libpython3.6_3.6.4-4.deb9u1_amd64,libpython3.6-minimal_3.6.4-4.deb9u1_amd64,libpython3.6-stdlib_3.6.4-4.deb9u1_amd64,libpython3.6-dev_3.6.4-4.deb9u1_amd64}.deb
 $ sudo dpkg -i *.deb
 ```
 
@@ -53,3 +53,8 @@ upgraded to the official packages.
 ### What about backports for Ubuntu?
 
 Try the very well-maintained [deadsnakes PPA](https://launchpad.net/~deadsnakes/+archive/ubuntu/ppa).
+
+### I want pre-built packages for ARM computer boards
+
+- For ARMv7 (like BeagleBone Black), find it in [AgriConnect](https://agriconnect.vn)'s [repo](https://gemfury.com/agriconnect).
+- Raspberry Pi is not supported yet.
