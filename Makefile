@@ -5,12 +5,12 @@ WORKDIR := python3.6-$(shell cut -d- -f1 <<< '$(VERSION)')
 # Sed command to remove "python3-distutils" dependency
 SED_TRIM := 'N; s/\s*python3-distutils,//; P; D'
 # Don't remove distutils modules
-LINE_DEL_DISTUTILS := rm -rf .+python.+/distutils
+LINE_DEL_DISTUTILS := rm -rf .*python.*/distutils
 # Dont't remove lib2to3. Note: We only keep 2to3 module. We still delete the bin
 # to avoid overwriting ones of Python3.5
-LINE_DEL_2TO3 := .+lib/python.+/lib2to3
+LINE_DEL_2TO3 := .*lib/python.*/lib2to3
 # Don't remove tkinter.
-LINE_DEL_TKINTER := .+lib/python.+/tkinter
+LINE_DEL_TKINTER := .*lib/python.*/tkinter
 # Create usr/share/doc folder for python3.6-tk, which is missing in original build script.
 SED_CREATE_DIR := '\:share/doc/$$(p_tk):i \\tmkdir -p $$(d_tk)/usr/share/doc/$$(p_tk)/'
 
