@@ -53,3 +53,5 @@ upgraded to the official packages.
 ### What about backports for Ubuntu?
 
 Try the very well-maintained [deadsnakes PPA](https://launchpad.net/~deadsnakes/+archive/ubuntu/ppa).
+
+Their code can also be used for Debian via [packaging deadsnakes in a Docker container](https://github.com/jhermann/ezpy/tree/master/deadsnakes#readme), so you get a choice of Python 3.6 / 3.7 / 3.8 on all four releases as of February 2020: Buster, Bionic, Stretch, and Xenial.
